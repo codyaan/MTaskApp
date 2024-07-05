@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.custom-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+
+}   
+
+body{
+    overflow-y  : hidden;
+}
+
+
+@media screen and (max-width: 900px) {
+    .todos-div{
+        width: 100%;
+    }
+    .main{
+        width: 100%;
+        margin: 0;
+        height: 86vh;
+        padding: .8rem;
+        border-radius: 0;
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .todo-txt{
+        font-size: 0.9rem;
+    }
+
+    .btns{
+        padding: 0.35rem .7rem ;
+        font-size: 0.8rem;
+    }
+
+    .check-todo{
+        /* gap: 0.5rem; */
+        text-wrap: wrap;
+    }
+}
